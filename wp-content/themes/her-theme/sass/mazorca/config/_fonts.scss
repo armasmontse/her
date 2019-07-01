@@ -1,0 +1,66 @@
+//_________________________ Config:Fuentes _________________________ \\
+
+/**
+ * Declare fonts using the Mixin
+ */
+
+@include declara-font-face(Recta, '../fonts/Recta-Regular', normal);
+@include declara-font-face(Recta, '../fonts/Recta-Medium', 500);
+@include declara-font-face(Recta, '../fonts/Recta-Medium', bold);
+
+@include declara-font-face(BodoniSvtyTwoSCITCTT-Book, '../fonts/BodoniSvtyTwoSCITCTT-Book', normal);
+@include declara-font-face(BodoniBoldCyrillic, '../fonts/BodoniSvtyTwoSCITCTT-Book', normal);
+
+@include declara-font-face(BodoniSvtyTwoITCTTBold, '../fonts/BodoniSvtyTwoITCTTBold', bold, normal);
+
+
+@include declara-font-face(ShorelinesScriptBold, '../fonts/ShorelinesScriptBold', normal);
+
+@include declara-font-face(KGLifeisMessy, '../fonts/KGLifeisMessy', normal);
+
+@include declara-font-face(Mf I Love Glitter, '../fonts/Mf I Love Glitter', normal);
+
+@include declara-font-face(MyriadPro-Regular, '../fonts/MyriadPro-Regular', normal);
+
+@include declara-font-face(Moon Light, '../fonts/Moon Light', normal);
+
+@include declara-font-face(Rajdhani, '../fonts/Rajdhani-Regular', normal, normal);
+@include declara-font-face(Rajdhani, '../fonts/Rajdhani-Bold', bold, normal);
+@include declara-font-face(Rajdhani, '../fonts/Rajdhani-Semibold', 600, normal);
+@include declara-font-face(Rajdhani, '../fonts/Rajdhani-Medium', 500, normal);
+
+
+@include declara-font-face(AGBookRounded, '../fonts/AGBookRounded-Regular', normal, normal);
+
+
+
+/// Refer to font families through mapped variables.
+/// Font families must be written as lists, that is, between parenthesis.
+///
+///
+
+
+
+$fonts:(
+	sans:	('Recta', sans-serif),
+	serif: ('BodoniSvtyTwoSCITCTT-Book', sans-serif),
+	bodoni: ('BodoniBoldCyrillic', sans-serif),
+	bodoni-bold: ('BodoniSvtyTwoITCTTBold', sans-serif),
+	script: ('ShorelinesScriptBold', sans-serif),
+	brocha: ('KGLifeisMessy', sans-serif),
+	glitter: ('Mf I Love Glitter', sans-serif),
+	myriad: ('MyriadPro-Regular', sans-serif),
+	moon: ('moon', sans-serif),
+	medium: ('Recta', sans-serif),
+
+	rajdhani: ('Rajdhani-Regular', sans-serif),
+	raj: ('Rajdhani-Medium', sans-serif),
+	dhani: ('Rajdhani-Bold', sans-serif),
+
+	Rajdhani: ('Rajdhani', sans-serif),
+	AGBookRounded: ('AGBookRounded', sans-serif),
+);
+
+@function f($font) {
+	@return map-get($fonts, $font);
+}

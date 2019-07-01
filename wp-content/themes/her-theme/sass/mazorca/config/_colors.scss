@@ -1,0 +1,40 @@
+$colors: (
+	black: #000000,
+	white:	#FFFFFF,
+
+	// Her
+	//red: #C8002D,
+	red: #eb0029,
+	red-buttons: #eb0029,
+	pink: #E8CACB,
+	gray: #575756,
+	gray-light: #C3CCD8,
+	beige: #F2E6D7,
+	brown: #8B3D39,
+	carne: #EADED0,
+	gray-text: #3C3C3B,
+	whitest: #F6F6F6,
+	light-red: #E2CCCC,
+	nude: #D6BFAE,
+	peach:#D19991,
+	nude-light:#F3E9DA,
+	purple:#565870,
+	light-purple: #E6E5E5,
+	darken: #868686,
+	ligthen-purple: #ECECEA,
+	grey-light: #D8DADE,
+	darken-light: #585857,
+	fire: #762126,
+	gray-pup: #ECECEC,
+	grey-hover: #bdc8c4,
+	);
+
+@function c($color:base) {
+	@return map-get($colors, $color);
+}
+
+//no borrar
+$colorForeground: c();
+$colorBackground: c(white);
+$colorFeatured: c(base);
+$colorError: #8A1010;

@@ -1,0 +1,157 @@
+.peinados {
+    &__main {
+        border-top: solid 1px #f6f6f6;
+        width: 100%;
+        // padding: 0px;
+        margin-bottom: 20px;
+    }
+    &__title {
+        width: 100%;
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 40px 0px;
+        text-transform: uppercase;
+        font-size: 16px;
+        color: c(red);
+        font-family: f(sans);
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        letter-spacing: 2px;
+        line-height: 18px;
+          @include under(sm){
+               padding: 40px 0px;
+               /*max-width: 328px;*/
+               display: flex;
+               justify-content: center;
+          }
+          @include under(xs){
+               padding: 40px 0px;
+               max-width: 328px;
+
+          }
+    }
+    &__info {
+        font-family: f(sans);
+        font-weight: 200;
+        font-size: 13px;
+        line-height: 15.6px;
+        letter-spacing: 0.25px;
+        color: #575756;
+        p {
+            padding: 10px 0px;
+        }
+        @include under(sm) {
+            text-align: center;
+        }
+
+    }
+    &__col {
+        &--container {
+            display: flex;
+            width: 100%;
+            max-width: 700px;
+            margin: 0 auto;
+            justify-content: center;
+            padding: 0 0px;
+            @include under(sm) {
+               padding: 0 20px;
+               flex-direction: column;
+            }
+            @include under(xs) {
+                display: flex;
+                width: 100%;
+                flex-wrap: wrap;
+                padding: 0 0px;
+            }
+        }
+        &--right {
+            padding-left: 60px !important;
+            @include under(xs) {
+                padding-left: 0px !important;
+            }
+            .peinados__row {
+                 justify-content: flex-end;
+                 @include under(sm) {
+                   justify-content: center;
+                 }
+            }
+        }
+        &--left {
+            padding-left: 10px;
+            padding-bottom: 6px;
+            @include under(xs) {
+                padding-left: 0px !important;
+            }
+            .peinados__row {
+                 justify-content: center;
+            }
+        }
+        &-mobile {
+               padding: 0px !important;
+               text-align: center;
+               @include under(sm) {
+                    width: 100%;
+                    padding: 0px !important;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+               }
+        }
+    }
+    &__extras {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+    }
+}
+
+.service {
+    display: flex;
+    margin-bottom: 10px;
+    @include under(sm) {
+        margin: 0 auto 10px;
+    }
+
+    &__box {
+        border: 2px solid c(gray-light);
+        display: flex;
+        font-weight: 500;
+        min-width: 250px;
+    }
+
+    &__name {
+        @extend %peinados-input;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        min-width: 160px;
+        padding: 10px 15px;
+        text-align: left;
+    }
+
+    &__time {
+        @extend %peinados-input;
+        border-left: 2px solid c(gray-light);
+        min-width: 90px;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    &__price {
+        @extend %peinados-input;
+        border: 2px solid c(gray-light);
+        width: 70px;
+        padding: 10px 0;
+
+        margin-left: 15px;
+
+        font-family: f(script);
+        font-size: 17px;
+        color: c(gray);
+        letter-spacing: 3px;
+        text-align: center;
+    }
+
+}

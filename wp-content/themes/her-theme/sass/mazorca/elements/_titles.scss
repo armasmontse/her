@@ -1,0 +1,58 @@
+%title {
+
+	font-family: f(sans);
+	font-size: 24px;
+
+}
+
+
+/* S l i d e r */
+%title-slider-content, .title-slider-content {
+	@extend %title;
+	font-family: f(bodoni);
+	line-height: 18px;
+	color: #eb0029;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 15px 0px;
+	font-size: 17px;
+}
+
+
+/* P a g e */
+%title-page, .title-page {
+	@extend %title-slider-content;
+	font-family: f(serif);
+	color: #eb0029 !important;
+	font-weight: 500;
+	// letter-spacing: .5px;
+}
+
+
+/* S u c u r s a l e s */
+%title-sucursales, .title-sucursales {
+	@extend %parragraph-page-text;
+	line-height: 18px;
+	font-family: f(serif) !important;
+	color: c(red);
+	text-transform: uppercase;
+}
+
+/* F o o t e r   S p l a s h */
+%title-footer, .title-footer {
+	@extend %title;
+	font-size: 14px;
+	color: c(red);
+	text-transform: uppercase;
+	font-weight: bold;
+}
+%peinados-input {
+	max-height: 45px;
+	height: 100%;
+	font-family: f(sans);
+	font-size: 12px;
+	line-height: 14.5px;
+	padding: 10px 20px;
+	color: c(gray);
+}

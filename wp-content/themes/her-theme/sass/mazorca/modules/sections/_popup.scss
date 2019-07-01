@@ -1,0 +1,120 @@
+$border: #eb0029;
+
+.popup {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    z-index: 99999;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    &__close {
+        position: absolute;
+        top: 0px;
+        right: 8px;
+        color: $border;
+        font-size: 32px;
+        cursor: pointer;
+    }
+
+    &__box {
+        margin: 20px;
+        padding: 20px;
+        background-color: white;
+        width: 100%;
+        max-width: 615px;
+    }
+
+    &__outer {
+        position: relative;
+        padding: 20px;
+        width: 100%;
+        border: 2.6px solid $border;
+    }
+
+    &__inner {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    &__ttl {
+
+        color: c(gray);
+        text-align: center;
+        text-transform: uppercase;
+
+        line-height: 1.3;
+        display: block;
+
+        &--ttl {
+            font-family: f(serif);
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        &--subttl {
+            font-size: 16px;
+            font-family: f(sans);
+            margin-bottom: 10px;
+        }
+    }
+
+    .ctct-form-wrapper {
+
+        .ctct-form-description {
+            display: none;
+        }
+
+        .ctct-button {
+            display: none;
+        }
+
+        .ctct-form-field {
+            label {
+                display: none;
+            }
+        }
+
+        .ctct-disclosure {
+            display: none;
+        }
+
+        .ctct-submit {
+            background-color: c(red);
+            color: c(white) !important;
+            font-size: 16px;
+            font-family: f(sans);
+            color: c(gray);
+            border: none;
+            text-align-last: center;
+            padding: 0;
+            display: block;
+            width: auto;
+            padding: 10px 10px 6px 10px;
+            margin: 0 auto;
+
+            &:hover {
+                background-color: darken(c(red), 5%);
+            }
+        }
+
+        .ctct-email,
+        .ctct-text {
+            font-family: f(sans);
+            padding: 10px 15px;
+            background-color: #ECECEC !important;
+            border: 0px !important;
+            font-size: 14px;
+            text-transform: none !important;
+        }
+
+        .ctct-message {
+            font-size: 13px;
+            font-family: f(sans);
+            margin: 10px 0;
+        }
+    }
+}

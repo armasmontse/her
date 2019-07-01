@@ -1,0 +1,128 @@
+.lax {
+    &__grey {
+        background-color: c(grey-light);
+    }
+    &__main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &--img {
+            width: 12px;
+            height: auto;
+            margin: 56px 0px;
+
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        &--txt {
+            margin: 0 auto;
+            width: 100%;
+            max-width: 490px;
+            height: auto;
+            color: c(darken);
+            line-height: 18px;
+            font-size: 15px;
+            text-align: center;
+            font-family: f(Rajdhani);
+            letter-spacing: .75px;
+            font-weight: normal;
+            color: #585857;
+            margin-bottom: 14px;
+            span {
+                padding: 54px 0px;
+                display: block;
+            }
+            @include under(sm) {
+                 padding: 0 10px;
+            }
+        }
+        &--address {
+            width:100%;
+            line-height: 38px;
+            height: auto;
+            color: #131f34;
+            font-weight: bold;
+            font-size: 20px;
+            text-align: center;
+            font-family:f(Rajdhani);
+            text-transform: uppercase;
+            letter-spacing: .75px;
+            padding-bottom: 23px;
+            @include  under(xs){
+                max-width: 100%;
+            }
+
+        }
+    }
+    &__services {
+        width: 78%;
+        max-width: 800px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 25px;
+
+        &--container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 290px;
+        }
+        &--ttl {
+            color: c(darken-light);
+            line-height: 24px;
+            font-size: 20px;
+            font-family: f(Rajdhani);
+            letter-spacing: .75px;
+            padding: 15px 0px 15px 0px;
+
+
+        }
+        &--img {
+            width: 100%;
+            padding-bottom: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+
+            &-box {
+                width: 100%;
+                max-width: 125px;
+                margin: 0 15px;
+
+                @include under(sm) {
+                    margin: 0;
+                }
+            }
+        }
+
+    }
+
+    &__branch {
+        margin: 15px 0;
+    }
+
+    &__page {
+        min-height: 100px;
+        h3 {
+            padding: 0px;
+            font-family: f(Rajdhani);
+            font-weight: 500;
+            padding-bottom: 10px;
+        }
+        a {
+            font-family: f(Rajdhani);
+            color: c(fire);
+            line-height: 24px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    }
+}

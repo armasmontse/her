@@ -1,0 +1,56 @@
+%paragraph {
+    font-size: 16px;
+    font-family: f(sans);
+}
+
+/* S l i d e r   -   c o n t e n t */
+%parragraph-slider-content, .parragraph-slider-content {
+	@extend %paragraph;
+     font-family: f(sans);
+     font-size: 18px;
+     line-height: 20px;
+     color: c(gray);
+     letter-spacing: 0.25px;
+
+}
+
+/* P a g e   -   t e x t */
+%parragraph-page-text, .parragraph-page-text {
+	@extend %paragraph;
+     font-family: f(sans);
+     font-size: 14px;
+     line-height: 18px;
+     padding-bottom: 30px;
+     color: c(gray);
+     letter-spacing: .25px;
+     font-weight: 500;
+}
+
+%parragraph-page-text-16, .parragraph-page-text-16 {
+	@extend %paragraph;
+     font-family: f(sans);
+     font-size: 16px;
+     line-height: 18px;
+     padding-bottom: 30px;
+     color: c(gray);
+     letter-spacing: .25px;
+     font-weight: 500;
+}
+
+/* P a g e   N i u s p a  -   l i s t */
+%parragraph-table-list, .parragraph-table-list {
+	@extend %paragraph;
+}
+
+/* F o o t e r */
+%parragraph-footer, .parragraph-footer {
+	@extend %paragraph;
+	text-align: center;
+	width: 100%;
+    color: c(gray-buttons);
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 1px;
+    color: #575756;
+}

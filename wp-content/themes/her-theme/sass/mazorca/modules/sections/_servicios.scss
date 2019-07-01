@@ -1,0 +1,97 @@
+.servicios {
+	&__main {
+		margin-bottom: 20px;
+		.peinados__row:hover > * {
+			border-right: 2px solid #C3CCD8;
+		}
+	}
+	&__cols {
+		@include under(sm) {
+			width: 100%;
+			padding: 0 !important;
+		}
+	}
+	&--width {
+		min-width: 230px;
+		@include under(xs) {
+			font-size: 12px;
+			min-width: 200px;
+		}
+	}
+    &__ttl {
+        margin-bottom: 0px;
+        padding: 50px 0px 20px 0px
+    }
+}
+
+.depilacion {
+	&__main {
+		// .depilacion__input:hover {
+		//     background-color: #C3CCD8;
+		//     border-color: #C3CCD8;
+		// }
+		margin-bottom: 20px;
+		.peinados__row {
+
+     		&--name, &--price {
+				border-right: 2px solid #C3CCD8;
+			}
+			.depilacion__input:hover {
+			     border: solid 2px #C3CCD8;
+			     background-color: #C3CCD8;
+			}
+		}
+	}
+	&__linea {
+		width: calc(100% - 10px);
+	}
+	&__col {
+		@include under(sm) {
+			width: 100%;
+			margin: 0 auto;
+			padding: 0px !important;
+		}
+		&.peinados__col--right {
+		    padding-left: 0px !important;
+		}
+	}
+}
+.mani-pedi {
+	&__main {
+		margin-bottom: 20px;
+		.maquillaje__border {
+		    border: solid 2px #BDC8C4;
+		}
+		.peinados__row:hover {
+			.peinados__row--name {
+				background-color: #BDC8C4;
+			}
+			.peinados__row--price {
+				background-color: #BDC8C4;
+			}
+		}
+
+		.peinados__col--container {
+			@include under(sm) {
+				flex-direction: column;
+				padding: 0 0px;
+
+			}
+		}
+		.peinados__title {
+			@include under(sm) {
+				max-width: 310px;
+			}
+			@include under(xs) {
+				max-width: 100%;
+			}
+		}
+	}
+
+	&__col {
+		@include under(sm) {
+			width: 100%;
+			padding: 0 !important;
+		}
+	}
+}

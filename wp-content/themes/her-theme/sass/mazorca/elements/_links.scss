@@ -1,0 +1,24 @@
+%link {
+	cursor: pointer;
+	text-decoration: none;
+
+	&:hover,
+	&:active,
+	.selected {
+	}
+}
+
+%link-navbar, .link-navbar {
+	@extend %link;
+	color: c(gray-text);
+	font-family: f(sans);
+	font-weight: bold;
+	font-size: 14px;
+	letter-spacing: 2px;
+	line-height: 19.2px;
+
+	&:hover,
+	&:active,
+	.selected {
+	}
+}

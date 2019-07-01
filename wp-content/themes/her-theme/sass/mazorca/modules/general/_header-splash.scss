@@ -1,0 +1,96 @@
+.header {
+	border-bottom: solid 1px #f6f6f6;
+    /*position: fixed;*/
+    width: 100%;
+    background: white;
+    z-index: 2;
+
+
+/* - - -  R e s p o n s i v e - - - */
+	/* large */
+	&.large {
+		/*height: 102px;*/
+		height: 100px;
+	}
+	/* small */
+	&.small {
+		height: 70px;
+	}
+/* - - // r e s p o n s i v e - - */
+
+	.nav {
+		width: 100%;
+		height: 100px;
+		padding: 10px 0;
+
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		&__redes {
+			display: flex;
+			width: 170px;
+			/* - - -  R e s p o n s i v e - - - */
+	    		&.large {
+	    			top: 33%;
+	    		}
+	    		&.small {
+	    			top: 23%;
+	    		}
+    			/* - - // r e s p o n s i v e - - */
+
+			&-img {
+				width: auto;
+				height: 23px;
+				margin-right: 20px;
+			}
+		}
+
+		&__logo {
+			&-img {
+	    		margin: 0 auto;
+
+	    		/* - - -  R e s p o n s i v e - - - */
+	    		&.large {
+	    			width: 90px;
+	    		}
+	    		&.small {
+	    			width: 50px;
+	    		}
+	    		/* - - // r e s p o n s i v e - - */
+			}
+
+		}
+
+		&__sucursales {
+			@extend %label-menu;
+
+			.flex {
+				height: 50px;
+				width: 100%;
+				align-items: center;
+			}
+
+			&-img {
+				width: 20px;
+				margin-right: 15px;
+			}
+		}
+
+	}
+
+}
+
+
+
+header,
+nav,
+a,
+img,
+li
+.nav__redes {
+	transition: .3s all;
+	-moz-transition: .3s all;
+	-webkit-transition: .3s all;
+	-o-transition: .3s all;
+}

@@ -1,0 +1,35 @@
+.maquillaje {
+    &--color {
+        color: c(gray-light);
+        font-size: 17px;
+    }
+    &--ttl {
+        color: c(red);
+    }
+    &__border {
+        border: solid 2px c(gray-light);
+        &--time {
+            border: solid 2px c(gray-light);
+            border-left: none;
+        }
+    }
+    &__row {
+        &:hover > * {
+            background-color: #E8CACB !important;
+        }
+    }
+    &__line {
+        width: calc(100% - 10px);
+    }
+}
+.depilacion {
+    &__input {
+        &:hover {
+            background-color: c(light-red);
+            border-color: c(light-red);
+        }
+    }
+    &__input-container {
+        padding-bottom: 107.3px;
+    }
+}

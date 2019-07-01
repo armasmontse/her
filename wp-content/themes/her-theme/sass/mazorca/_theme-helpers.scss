@@ -1,0 +1,31 @@
+.horizontal-line {
+	border: #f6f6f6 .5px solid;
+}
+
+.flex-between {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+%border-line, .border-line {
+	@extend %label-input-text;
+	font-size: 12px;
+	line-height: 14.4px;
+	border: 1.5px solid c(pink);
+	padding: 14px 20px 10px 20px;
+	color: c(gray);
+
+	&:hover {
+		background: c(pink);
+	}
+
+}
+
+%border-lateral, .border-lateral {
+	border-left: 1px solid c(gray-light);
+	border-right: 1px solid c(gray-light);
+	@include under(sm) {
+		border: none;
+	}
+}

@@ -1,0 +1,141 @@
+.niuspa {
+	&__row {
+		position: relative;
+		width: 100%;
+		min-height: 1px;
+	}
+	&__container {
+		width: $container-max-width;
+		margin: 0 auto;
+	}
+
+	&__brand {
+		&-image {
+
+		}
+
+		&-text {
+			color: c(red-buttons);
+			font-size: 30px;
+			font-family: itim;
+			text-align: center;
+			width: 40%;
+			margin: 0 auto;
+		}
+	}
+
+	&__tratamientos {
+		background-color: #d3d3d3;
+		text-align: center;
+		&-bandattl {
+			background-color: #575756;
+			padding: 10px;
+
+			&--ttl {
+				font-family: 'Itim', cursive;
+				font-size: 25px;
+				color: #fff;
+			}
+		}
+	}
+
+	&__mejora {
+		background-color: #ebebeb;
+		text-align: center;
+		padding: 30px 0px 60px 0px;
+		&-ttl {
+			color: c(red-buttons);
+			padding: 0px 0px 30px 0px;
+			font-family: 'Itim', cursive;
+			font-size: 25px;
+		}
+
+		&-list {
+			font-size: 20px;
+			font-family: 'Itim', cursive;
+			color: #575756;
+			div {
+				display: list-item;
+				list-style-type: disc;
+				list-style-position: inside;
+				text-align: center;
+			}
+		}
+	}
+	&__precios-content {
+		width: 70%;
+		margin: 0 auto;
+		padding: 30px 0px 60px 0px;
+
+		table {
+			width: 100%;
+		    border-collapse: collapse;
+
+			thead tr {
+				@include under(sm) {
+					position: absolute;
+					top: -9999px;
+					left: -9999px;
+				}
+			}
+
+			tr {
+				@include under(sm) {
+					border: 2px solid #69748A;
+					&:nth-of-type(2n+1) {
+
+						border-bottom: 0px solid transparent;
+					}
+				}
+			}
+
+		    td, th {
+				padding: 6px;
+				border: 2px solid #69748A;
+				text-align: left;
+				@extend %parragraph-table-list;
+
+			}
+			td {
+				@include under(sm) {
+					border: none;
+					position: relative;
+					padding-left: 50%;
+				}
+			}
+			td:nth-of-type(odd) {
+				width: 90%;
+				border-right: 0px solid transparent;
+				padding-left: 15px;
+				padding-top: 10px;
+				padding-bottom: 3px;
+				@include under(sm) {
+					width: 100%;
+					border-right: 0px solid transparent;
+				}
+			}
+			td:nth-of-type(even) {
+				width: 10%;
+				border-left: 2px solid c(red-buttons);
+				text-align: right;
+				padding-right: 15px;
+				padding-top: 10px;
+				padding-bottom: 3px;
+				@include under(sm) {
+					width: 100%;
+					border-left: 0px solid transparent;
+				}
+			}
+		}
+
+		table, thead, tbody, th, td, tr {
+			@include under(sm) {
+			display: block;
+			}
+		}
+	}
+
+	&__precios {
+
+	}
+}

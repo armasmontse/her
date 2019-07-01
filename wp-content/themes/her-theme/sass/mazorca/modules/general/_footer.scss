@@ -1,0 +1,134 @@
+body {
+	display: flex;
+	flex-direction: column;
+	margin: 0px;
+	padding: 0px;
+	overflow-x: hidden;
+
+	.main-wrap {
+		flex: 1;
+	}
+}
+
+.general {
+
+	.footer {
+		border-top: 1px solid #f6f6f6;
+		height: 50px;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-top: 25px;
+	}
+}
+
+// F o o t e r  - s p l a s h
+
+.splash {
+
+
+	.footer {
+		$col-1: 100%/12;
+		text-align: center;
+		padding: 40px 0 50px;
+		border-top: 2px solid #DADADA;
+		letter-spacing: 2px;
+		line-height: 18px;
+
+		&__col {
+			width: calc(#{$col-1} * 2);
+
+			@include under (md) {
+				width: calc(#{$col-1} * 4);
+				margin-bottom: 30px;
+			}
+
+			@include under (sm) {
+				width: calc(#{$col-1} * 6);
+			}
+
+			@include under (xs) {
+				width: calc(#{$col-1} * 12);
+			}
+
+			&-pd {
+				padding: 0 15px;
+			}
+		}
+
+		/* S u c u r s a l e s */
+		&__sucursal {
+
+			&-ttl {
+				letter-spacing: 3px;
+
+			}
+
+			&-direccion {
+				@extend %title;
+				margin-bottom: 20px;
+
+				/* S p l a s h */
+				font-size: 14px;
+
+
+			}
+
+			&-telefono {
+				@extend %title;
+				display: block;
+
+				/* S p l a s h */
+				font-size: 14px;
+			}
+
+			&-whatsapp{
+
+				@extend %title;
+				margin-top: 20px;
+
+				/* S p l a s h */
+				font-size: 14px;
+
+				display: flex;
+	    		align-items: center;
+	    		justify-content: center;
+
+				img {
+					width: 16px;
+					margin-right: 10px;
+				}
+
+			}
+
+			&-logo {
+				width: 20px;
+			}
+
+			&-tienda {
+
+				&-logo{
+					width: 70%;
+					margin: 0 auto;
+				}
+			}
+		}
+
+		&__box {
+
+			&-ttl {
+				display: flex;
+	    		justify-content: center;
+	    		margin-bottom: 18px;
+	    		align-items: center;
+	    		height: 35px;
+			}
+		}
+	}
+}
+
+
+.beauty {
+	margin-right: 6px;
+}

@@ -1,0 +1,13 @@
+/* DESIGN TEAM */
+  Team: ####
+  Contact: ####
+  Twitter: ####
+  From: ####
+
+/* DVP TEAM */
+	Team: El Cultivo
+	Contact: hola [at] elcultivo.mx
+	Twitter: @el_cultivo
+  Github: /el-cultivo
+  Website: http://www.elcultivo.mx/quienes-somos
+	From: Mexico City (CDMX), Mexico

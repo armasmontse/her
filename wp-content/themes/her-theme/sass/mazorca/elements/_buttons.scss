@@ -1,0 +1,14 @@
+%button {
+	font-family: f(bodoni-bold);
+	cursor: pointer;
+}
+
+%button-agendar {
+	@extend %button;
+	font-size: 11px;
+	border: none;
+	background-color: c(red-buttons);
+	color: c(white);
+	line-height: 20px;
+	letter-spacing: 2px;
+}

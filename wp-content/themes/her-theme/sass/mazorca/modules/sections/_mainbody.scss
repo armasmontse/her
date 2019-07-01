@@ -1,0 +1,178 @@
+.mainbody {
+    height: 100%;
+    min-height: 715px;
+    // @include under(sm) {
+    //      margin-bottom: 60px;
+    // }
+    // @include under(xs) {
+    //      margin-bottom: 90px;
+    // }
+
+    // @media (max-height: 600px) {
+         
+    //      margin-bottom: 190px;
+    // }
+
+    .header {
+        border-bottom: none;
+    }
+    h1 {
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .healcode-title-text {
+        font-family: f(moon);
+        font-size: 20px;
+        color: c(red);
+        font-weight: bold;
+    }
+    select {
+        width: 330px;
+        @include under(xs) {
+            width: 200px;
+        }
+        height: 36px;
+        align-self: center;
+        padding: 10px;
+        margin-left: 0px;
+        font-size: 14px;
+        font-family: f(sans);
+        background-color: transparent;
+        color: c(purple);
+        text-align-last: center;
+        border: 1px solid #f6f6f6;
+    }
+
+
+    .hc_footer {
+        img {
+        position: relative;
+        top: -60px;
+        right: 50px;
+        width: 100px;
+            @include under(xs){
+                position: absolute;
+            }
+        }
+    }
+    .ui-datepicker-title {
+        font-size: 20px;
+        font-family: f(moon);
+        color: c(red);
+    }
+    .ui-datepicker-calendar {
+        font-size: 20px;
+        font-family: f(moon);
+        background-color: transparent;
+        color: c(red);
+        @include under(xs){
+            font-size: 14px;
+        }
+
+    }
+    .ui-datepicker-inline {
+        width: 35%;
+    }
+    .ui-weekpicker ,.hasDatepicker {
+        width: 70%;
+        display: flex;
+        justify-content: center;
+    }
+    .pre-filters {
+        div {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+    }
+    .ui-datepicker-inline {
+     margin-top: 20px;
+        @include under(xs){
+            width: calc(100% - 100px);
+        }
+    }
+    .hc-button {
+        display: inline-block;
+        padding: 6px 12px;
+        margin-bottom: 0;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.42857143;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        background-color: #f6f6f6;
+        color: #FFFFFF;
+        min-width: 150px;
+        align-self: flex-start;
+        font-size: 14px;
+        font-family: f(moon);
+        border-radius: 3px;
+        margin-top: 0px;
+        color: c(red);
+        &:hover {
+            background-color: c(white);
+            color: c(red);
+        }
+    }
+
+    .ui-datepicker-inline.ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all {
+         width: 100%;
+         max-width: 335px;
+    }
+
+    div.healcode .ui-state-default, div.healcode .ui-widget-content .ui-state-default, div.healcode .ui-widget-header .ui-state-default {
+         background: transparent ;
+    }
+    div.healcode .ui-state-default, div.healcode .ui-widget-content .ui-state-default, div.healcode .ui-widget-header .ui-state-default {
+          border: 1px solid #f6f6f6;
+    }
+
+    div.healcode .ui-state-disabled, div.healcode .ui-widget-content .ui-state-disabled, div.healcode .ui-widget-header .ui-state-disabled {
+         opacity: 0.5;
+    }
+    div.healcode .ui-state-highlight, div.healcode .ui-widget-content .ui-state-highlight, div.healcode .ui-widget-header .ui-state-highlight {
+         color: #000;
+    }
+
+    div.healcode .ui-widget-content {
+         border: 0px solid #aaaaaa;
+    }
+    .pre-filters div {
+         border: 0px !important;
+    }
+    div.healcode .ui-widget-header {
+         border: 1px solid #aaaaaa;
+         background: transparent;
+     }
+    table tbody {
+         font-size: 14px;
+    }
+
+    .pre-filters div {
+         margin: 10px 0px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+     }
+
+     .parsley-errors-list.filled>li {
+          font-family: "Recta", sans-serif !important;
+          font-size: 12px;
+          margin: 10px 0 0 0;
+     }
+
+    .pre-filters div a {
+         margin-left: auto;
+         margin-right: auto;
+    }
+
+    div.healcode .ui-datepicker .ui-datepicker-title {
+        @include under(xs) {
+              font-size:15px;
+        }
+    }
+}
